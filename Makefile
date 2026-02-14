@@ -12,14 +12,7 @@ web-build:
 
 init:
 	@pip install -U pip; \
-	pip install -e ".[dev]"; \
-	pre-commit install; \
-
-pre-commit:
-	pre-commit install
-
-pre-commit-all:
-	pre-commit run --all-files
+	pip install -e ".[dev]"
 
 format:
 	black .
