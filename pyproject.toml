@@ -5,8 +5,10 @@ version = "1.0.0"
 description = "Flappy Bird in Pygame"
 requires-python = ">=3.9,<4"
 dependencies = [
-    "pygame == 2.4.0"
-    ]
+    "pygame == 2.4.0",
+    "opencv-python >= 4.8.0",
+    "mediapipe == 0.10.21",  # 0.10.22+ removed solutions API
+]
 
 [project.optional-dependencies]
 dev = [
